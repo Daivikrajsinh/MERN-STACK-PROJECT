@@ -1,0 +1,72 @@
+/* StudentList.css */
+
+.student-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .student-card {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .add-button {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .table thead th {
+    background-color: #f1f1f1;
+    color: #495057;
+  }
+  
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }
+  
+  .action-buttons .btn {
+    margin-right: 6px;
+  }
+  
+  .pagination-controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination-controls button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls button span {
+    font-weight: bold;
+  }
+  

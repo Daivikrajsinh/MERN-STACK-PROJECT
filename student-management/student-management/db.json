@@ -1,0 +1,100 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "userName": "alicej",
+      "email": "alice.johnson@example.com",
+      "phone": "555-1234",
+      "website": "alicejohnson.com"
+    },
+    {
+      "id": "2",
+      "name": "Bob Smith",
+      "userName": "bobsmith",
+      "email": "bob.smith@example.com",
+      "phone": "555-5678",
+      "website": "bobsmith.dev"
+    },
+    {
+      "id": "3",
+      "name": "Charlie Brown",
+      "userName": "charlieb",
+      "email": "charlie.brown@example.com",
+      "phone": "555-9012",
+      "website": "charliebrown.io"
+    },
+    {
+      "id": "4",
+      "name": "Diana Prince",
+      "userName": "dianap",
+      "email": "diana.prince@example.com",
+      "phone": "555-3456",
+      "website": "dianaprince.org"
+    },
+    {
+      "id": "5",
+      "name": "Ethan Wright",
+      "userName": "ethanw",
+      "email": "ethan.wright@example.com",
+      "phone": "555-7890",
+      "website": "ethanwright.net"
+    },
+    {
+      "id": "6",
+      "name": "Fiona Davis",
+      "userName": "fionad",
+      "email": "fiona.davis@example.com",
+      "phone": "555-6543",
+      "website": "fionadavis.co"
+    },
+    {
+      "id": "7",
+      "name": "George Wilson",
+      "userName": "georgew",
+      "email": "george.wilson@example.com",
+      "phone": "555-3210",
+      "website": "georgewilson.info"
+    },
+    {
+      "id": "8",
+      "name": "Hannah Lee",
+      "userName": "hannahlee",
+      "email": "hannah.lee@example.com",
+      "phone": "555-8765",
+      "website": "hannahlee.tech"
+    },
+    {
+      "id": "9",
+      "name": "Ian Moore",
+      "userName": "ianmoore",
+      "email": "ian.moore@example.com",
+      "phone": "555-2345",
+      "website": "ianmoore.dev"
+    },
+    {
+      "id": "10",
+      "name": "Julia Adams",
+      "userName": "juliaa",
+      "email": "julia.adams@example.com",
+      "phone": "555-0987",
+      "website": "juliaadams.me"
+    },
+    {
+      "id": "8966",
+      "name": "Arpit Makwana",
+      "userName": "arpit",
+      "email": "arpit@gmail.com",
+      "phone": "8780545487",
+      "website": "flipcart.com"
+    }
+  ],
+  "user": [
+    {
+      "id": "7c4e",
+      "userName": "arpit",
+      "email": "arpit@gmail.com",
+      "password": "123"
+    }
+  ]
+}
