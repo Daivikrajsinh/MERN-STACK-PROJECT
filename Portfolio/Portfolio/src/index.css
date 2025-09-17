@@ -1,0 +1,638 @@
+@import "tailwindcss";
+
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+}
+
+.app {
+  text-align: center;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #111;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #111;
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.scroll-down {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.scroll-down span {
+  font-size: 1.5rem;
+}
+
+.about-me {
+  background-color: #111;
+  color: white;
+  padding: 5rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+}
+.products-section {
+  background-color: #111;
+  color: white;
+  padding: 5rem 10%;
+  text-align: center;
+}
+
+.products-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.products-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white;
+}
+.subscribe-section {
+  display: flex;
+  background-color: #111;
+  color: white;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.subscribe-image {
+  flex: 1;
+  position: relative;
+}
+
+.subscribe-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.photo-credit {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+}
+
+.subscribe-form {
+  flex: 1;
+}
+
+.subscribe-form h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.subscribe-form p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe-form .disclaimer {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.subscribe-form a {
+  color: white;
+  text-decoration: underline;
+}
+
+.subscribe-form button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-form button:hover {
+  background-color: #ddd;
+}
+.footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Georgia', serif;
+}
+
+.footer-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.footer-note {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+.footer-note a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-body i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.services-section{
+  background-color: #111;
+  color: white;
+  padding: 5rem 10%;
+  text-align: center;
+}
+.service-card {
+  background-color: #111;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  background-color: #222;
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.service-card h5 {
+  color: white;
+}
+
+.service-card p {
+  color: #bbb;
+}
+
+.btn-outline-light {
+  border-color: white;
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: black;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(180deg, #ffffff, #f0f0f0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background: linear-gradient(180deg, #e6f0fa, #f5f5f5);
+  color: #333;
+}
+
+.hero-section h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero-section p {
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.scroll-down {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.scroll-down span {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.about-me {
+  background-color: #ffffff;
+  color: #333;
+  padding: 6rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #555;
+}
+
+.products-section {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 6rem 10%;
+  text-align: center;
+}
+
+.products-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.products-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-card {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #007bff;
+}
+
+.subscribe-section {
+  display: flex;
+  background: linear-gradient(180deg, #ffffff, #f0f0f0);
+  color: #333;
+  padding: 60px 10%;
+  gap: 50px;
+}
+
+.subscribe-image {
+  flex: 1;
+  position: relative;
+}
+
+.subscribe-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-credit {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.subscribe-form {
+  flex: 1;
+}
+
+.subscribe-form h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.subscribe-form p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subscribe-form label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.subscribe-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.subscribe-form .disclaimer {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.subscribe-form a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.subscribe-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  background: linear-gradient(180deg, #f0f0f0, #e6e6e6);
+  color: #333;
+  text-align: center;
+  padding: 30px 0;
+  font-family: 'Georgia', serif;
+}
+
+.footer-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.footer-note {
+  margin: 8px 0 0;
+  font-size: 1.1rem;
+}
+
+.footer-note a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.card-body i {
+  font-size: 3.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.services-section {
+  background-color: #ffffff;
+  color: #333;
+  padding: 6rem 10%;
+  text-align: center;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 3.2rem;
+  color: #007bff;
+}
+
+.service-card h5 {
+  color: #333;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #555;
+}
+
+.btn-outline-light {
+  border-color: #007bff;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #007bff;
+  color: white;
+} 
+
+
+
+
+
+
+
